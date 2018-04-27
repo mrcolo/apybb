@@ -1,9 +1,10 @@
+import os
 
 from flask import Flask,jsonify, request, render_template,Response #import main Flask class and request object
 from svmNewArticle import evaluate_bias
 app = Flask(__name__) #create the Flask app
-
-@app.route('/retrieveInfo', methods=['GET'])
+port = int(os.environ.get('PORT', 5000))
+@app.route('/', methods=['GET'])
 def hello():
     print("works")
 
@@ -24,4 +25,4 @@ def json_example():
     return biasScore
 
 if __name__ == '__main__':
-    app.run(debug=True) #run app in debug mode on port 33507
+    app.run(host='0.0.0.0', port=port) #run app in debug mode on port 33507
