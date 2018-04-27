@@ -9,6 +9,8 @@ name = "pypi"
 sklearn = "*"
 Flask = "*"
 gunicorn = "*"
+numpy = "*"
+scipy = "*"
 
 [requires]
 python_version = "2.7"
