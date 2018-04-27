@@ -3,6 +3,11 @@ from flask import Flask,jsonify, request, render_template,Response #import main 
 from svmNewArticle import evaluate_bias
 app = Flask(__name__) #create the Flask app
 
+@app.route('/retrieveInfo', methods=['GET'])
+def hello():
+    print("works")
+
+
 @app.route('/retrieveInfo', methods=['POST'])
 def json_example():
     req_data = request.get_json()
@@ -19,4 +24,4 @@ def json_example():
     return biasScore
 
 if __name__ == '__main__':
-    app.run(debug=True, port=33507) #run app in debug mode on port 33507
+    app.run(debug=True) #run app in debug mode on port 33507
