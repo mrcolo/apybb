@@ -46,4 +46,4 @@ urllib3==1.22
 vboxapi==1.0
 virtualenv==15.1.0
 virtualenv-clone==0.3.0
-Werkzeug==0.14.1
+Werkzeug==0.15.3
