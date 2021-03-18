@@ -26,7 +26,7 @@ olefile==0.44
 ordereddict==1.1
 pandas==0.22.0
 pathlib2==2.1.0
-Pillow==4.0.0
+Pillow==8.1.1
 pipenv==11.10.0
 powerline-status==2.5
 pyasn1==0.4.2
